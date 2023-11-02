@@ -1,4 +1,4 @@
-<img width="690" alt="image" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/727b85c8-2efb-4908-8941-c4106956b0f5"># Wireless communication basics    
+# Wireless communication basics    
 - Allows transfer of informatiion betweeen transmitter and receiver without a physical medium
 - Communication link uses radio frequency signals to transfer information.
 <img width="697" alt="Screenshot 2023-10-30 211339" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3fcec94e-9afc-4c50-9248-18a89b09edf0">
