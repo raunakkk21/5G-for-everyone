@@ -255,7 +255,215 @@
   - Once the network is software definded, the network funcitons can run on *Commercial off the shelf*(COTS) hardware.
   - Safely offloaded to cloud  network
 
-## Mobile edge computing(MEC)
+## Mobile edge computing(MEC)  
+<img width="750" alt="Screenshot 2023-11-02 191926" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/8fbdb7e3-d989-4d5d-8d75-c36f3a1b7a52">    
+
+- SDN, NFV and 5g promote development of edge computing.
+
+# The 5G NR spectrum
+<img width="800" alt="Screenshot 2023-11-02 192632" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/28b4f415-b166-4071-8484-fd12528c6a33">    
+
+- Low bands( less than 1GHz) have longere ranges.
+- Mid bands have wider range.
+- High bands abovee(24GHz) have abundant bandwidht.
+
+## Motivation and challenges behind mmWave.
+<img width="750" alt="Screenshot 2023-11-02 192928" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/4ca2b570-7617-46b1-b145-5b00076d3f87">     
+
+- mmWave is largely unused ample spectrum available.
+- Enormous bandwidth can fulfill demand.
+- Inferior propagation have high frequecny leads to path loss
+- Attenuation due to rain and follage
+- Large bandwidth-less crowding
+- More anteenas
+- High directivity-better focus- high spectral efficiency
+
+
+## Advantages of mmWave 
+1.*Directivity*- All antennas can act cohesively as one entity.  
+<img width="750" alt="Screenshot 2023-11-02 193408" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/dce04fff-5a04-4871-be9d-7451536991ba">  
+<img width="500" alt="Screenshot 2023-11-02 193548" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/529aeac4-324f-4a63-870e-6e907ec33cdb">  
+
+ - High pathloss and directivity leads to better saptial use.
+   
+
+## mmWave deployments opportunites overview
+<img width="750" alt="Screenshot 2023-11-02 193756" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/0bf99019-bba5-4f9d-b407-848477274419">  
+
+
+## mmWave for urban,suburban and rural deployments
+
+<img width="700" align="left" alt="Screenshot 2023-11-02 193939" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c2e84926-4e6f-412d-a1b5-d8581de1b57c">    
+<img width="700" align="left" alt="Screenshot 2023-11-02 194003" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/e9416c84-f889-44ee-8510-586716472f16">
+<img width="700" alt="Screenshot 2023-11-02 194517" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/24a9ff97-6471-481d-ab95-ccf8db4a39bd">  
+
+ --------------------------------------
+
+## mmWave for fixed wireless access  
+<img width="750" alt="Screenshot 2023-11-02 194930" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/5b66f1ff-7ab0-4984-a871-8dc9c9e79fa7">    
+
+- It can be kept anywhere for internet access.
+
+## Indoor and Venue deployments of mmWave
+<img width="750" alt="Screenshot 2023-11-02 195054" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2356c7ca-3fd2-4329-a57a-a613ce8c33c5">   
+
+**Challenges**  
+- No in building penetration
+- Single decay likely not significant in short ranges.
+
+  -----------------
+
+# Massive MIMO and antenna arrays
+<img width="750" alt="Screenshot 2023-11-02 195333" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2728bc1f-c914-4db1-a1b3-e645510be06d">    
+<img width="683" alt="Screenshot 2023-11-02 195441" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/4191fa39-a3d4-4d69-9931-a3919084defc">
+
+
+## Beamforming
+- In previous technologies antennaas dont work together but herer they can send multiple beams together.
+- Maximising SNR is one of the key goals of wirelss system.
+- Better spectral efficiency- high throughput
+- Typical 5G gNodeB can send multiple beams simultaneously on deployment variants
+- Multi user MIMO
+
+## Beamsweeping for coverage
+<img width="700" alt="Screenshot 2023-11-02 200313" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3d9c2be8-a456-4a36-a084-663ad7b91765">   
+
+- Every cell has a coverage depending on frequency
+- On edge of a cell signal is degraded
+- For ex- A bulb in center of room and a flashlight in particular direction
+
+- **Beamsweeping**- It periodically sends beams across enitre cell for coverage
+- gNB can cover entire cell using multiple beams even thoufh each beam is narrom.
+- It helps UE to start communicating with network and tells where UE is located.
+
+
+## Benifits of m-MIMO 
+<img width="700" alt="Screenshot 2023-11-02 200645" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/be61ca9b-a786-4c59-93f4-d56afd69f05b">  
+
+
+# Evolution of RAN  
+<img width="700" alt="Screenshot 2023-11-02 200852" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/f8dc4ac3-c603-4518-8fbb-6c90b604d623">  
+
+
+## Motivation for RAN virtualization(vRAN)
+<img width="700" alt="Screenshot 2023-11-02 201018" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/a7cc8cf5-2d57-413c-a2c1-e86cedbd97cc">  
+
+- Flexibility, standardization and flexibility are some of key advanatages of vRAN.    
+
+
+## RAN functional split  
+<img width="600" alt="Screenshot 2023-11-02 201151" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/ef57640e-aab3-460d-9e77-544c7b8c5ce7">  
+
+
+## Traditional vs Virtualized RAN  
+
+<img width="700" alt="Screenshot 2023-11-02 201426" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b255f5dc-3911-4548-b6d3-d10ab029bbbd">  
+
+
+# Private network and industial IoT(Internet of things)  
+
+<img width="700" alt="Screenshot 2023-11-02 201603" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/32c3ec2a-871f-40ee-8ceb-58a9b2dbd96e">   
+
+
+# Benifits of private networks
+
+
+<img width="700" alt="Screenshot 2023-11-02 201734" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/87cc0e43-b525-4a78-85fb-311700f7c23c">  
+
+## Industrial IoT and 5G  
+
+<img width="750" alt="Screenshot 2023-11-02 201916" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/8e5cb991-0d27-4fd5-bf0c-64171b89ba35">  
+
+## Private network for IoT
+- Optimized, dedicated, secure and best of both worlds.
+<img width="650" alt="Screenshot 2023-11-02 202047" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/bf845bcc-9eb3-4ac0-ae15-d017e900c1ff">
+
+## Industrial vs masssive IoT
+
+<img width="550" alt="Screenshot 2023-11-02 202224" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3a9593c5-3983-4878-bb18-f3bc8fe61f1d">  
+
+## Deployment considerations
+
+<img width="600" alt="Screenshot 2023-11-02 202341" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/7315c972-a7ab-4186-a180-f1fa06140b6f">  
+
+
+## Spectrum options for private networks and IoT
+
+<img width="617" alt="Screenshot 2023-11-02 202507" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/78d7469f-d028-4f77-b9f5-be7cd3e6cbe8">   
+
+- 5G systems can replace ethernet cables and swithces transparent to machine.
+
+
+# Overview of Securtiy in 5G
+
+<img width="700" alt="Screenshot 2023-11-02 202704" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/791f6591-630e-48d8-93c0-cb2f2c7b1a81">  
+
+
+## Enchanced system level design  
+- *3GPP access*- When a user trying access to 5G core network over public or private 5G network.
+- *Non-3GPP access*- Different wireless technology- some users may request connectiveity to 5G core network while they are connected to wifi hotspot rather than 5G gives.
+  
+<img width="750" alt="Screenshot 2023-11-02 202747" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/f8422892-b7dc-4190-b0f9-8458b5fe9ce0">  
+
+## Enhanced protection and increased flexibility  
+- 5G devices can detect malicious data on both user and control end
+<img width="688" alt="Screenshot 2023-11-02 203131" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/788bbe57-8ba6-4b0d-8484-aa687dde44ef">  
+
+
+
+## Protecting user privacy
+
+<img width="601" alt="Screenshot 2023-11-02 203238" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3a20144b-5330-4109-aa1d-3bd624b7d5cd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
   
 
