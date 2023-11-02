@@ -1,4 +1,4 @@
-# Wireless communication basics    
+<img width="690" alt="image" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/727b85c8-2efb-4908-8941-c4106956b0f5"># Wireless communication basics    
 - Allows transfer of informatiion betweeen transmitter and receiver without a physical medium
 - Communication link uses radio frequency signals to transfer information.
 <img width="697" alt="Screenshot 2023-10-30 211339" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3fcec94e-9afc-4c50-9248-18a89b09edf0">
@@ -145,6 +145,147 @@
 - Emphasis on E2E(End to end) latency instead of speed less than 1ms.
 - Fundamental resdesign of porotcols
 - Ultra high reliability and availibiltiy.
+
+# 5G Networking terminology and concepts
+<img width="700"  height="350" alt="Screenshot 2023-11-02 181410" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/afc6c2cd-ef05-4f10-b0ce-a74d5554d9c9">    
+
+- *gNOdeB*- Base station for 5G networks suports connectivity to NGC.
+- *Access and mobility managemnet function(AME)*- Supports user equipment(UE) network access and manages its mobility.
+- *Session management fucntion(SMF)*- Suports signaling for IP address allocation and conncectivity.
+- *User plane function*- Handles all content genreated and consumed by apps for ex-web pages.
+- *User data* - It is what we see in our phones
+- *Control messages*- It is used to esatablish conneciton.
+- User and control plane both are required in 5G.
+  
+ **Base station in diffrent generations**  
+ - 3G- NodeB
+ - 4G- eNodeB(enhanced node B)
+ - 5G- gNodeB(next generation node B)
+
+## Network architecture options fo 5G NR
+<img width="750" width="450" alt="Screenshot 2023-11-02 182424" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/0cab1490-330a-42c2-b233-b52dd9b0c0e4">   
+
+
+## 5G Technologies overview
+<img width="650" alt="Screenshot 2023-11-02 182633" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/10ba513f-1a66-4812-839c-d62dda01db99">  
+
+## Flexible slot based framework
+<img width="750" alt="Screenshot 2023-11-02 182735" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/957374f2-0c73-41a4-90e2-4a70068ba732">      
+
+- For forward compatibility and ultra low latency
+- In 5G it uses left resources to provide it to another user.
+- Lane width changes here.
+
+## Scalable OFDM based framework
+<img width="750" alt="Screenshot 2023-11-02 182947" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/23e7ea83-9e27-4a80-9db5-0d94d0b777a1">  
+
+- For diverse services sepctrum deployments
+- *OFDM* - Orthogonal frequency division multiplexing
+- Ability to dynamically add or subtract lanes according to requiremetns
+- Width of lane is fixed in this lane but road width migh change.
+- Exponentially scalable from single to multi users design for all configurations.
+
+
+## Advanced Channel coding(Error control coding or Forward error code)   
+<img width="750" alt="Screenshot 2023-11-02 183413" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b3b1e886-9704-4e86-8a30-bb62a6a30542">   
+
+- Provides additonal metadeta to wireless signals to minimize the effects of path loss, noise and interference.
+- With channel coding, meassage is sent only once, hence helps to save power in transmitter
+- For more efficient delivery and mulit Gbps data rates
+- Bettter engine efficiency achieve higher speed with less fuel consumption.
+
+## Massive MIMO
+<img width="750" alt="Screenshot 2023-11-02 183750" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/066f784c-eb4f-494f-a349-c97a1b67bace">  
+
+- *MIMO* - Multiple input mulitple output.
+- For increased network coverage and capacity.
+- MUlti broadband
+- The reason that why these diffrent antennas operating at same channels do not interfere because they are enclosed by transmitter diffrently.
+
+## Mobile mmWave
+<img width="750" alt="Screenshot 2023-11-02 184234" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/15a03f44-a265-485d-be6e-03c29528f9d6">    
+
+- Range of frequencies in which wavelengt is in order of few millimeters.
+- Like roads in uncharted territories in previously available resources.
+- mmW is mostly unused spectrum.
+- Bandwidth in 4g is fixed at 20MHz
+- Bandwidht in 5G is upto 800MHz from 400Mhz
+
+## 5G network principles and overview
+<img width="750" alt="Screenshot 2023-11-02 184551" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/bfe21efd-2f9a-462f-9fbb-0cd4c6c2e7ad">  
+
+- Indpendence of software from hardware
+- Decoupling of compute and storage services
+- Seperatio of uer plane(applicaiton data) from control placne(signaling)
+- Cloud compatible design
+
+## Network Slicing
+<img width="750" alt="Screenshot 2023-11-02 184836" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3d101cb1-f275-4664-a1c7-10e2e450c123">    
+
+- Subset of available network component that can provde E2E service.
+- Designed and commisioned according to needs.
+- *Benifits*- Dynamic and efficent resource allocation and utilization. Resource isolation among serverse and flexible subscription models.
+- Slicing allows to allocate resources to diffrent service class according to requirements.
+- We can have particularly (AMF/SMF/UPF) as much as we want according  to needs.
+- Even if IoT goes down, URLLC and eMBB continue to operate.
+- We can also give different subscription modesls i.e only IoT, or both
+
+
+## Network Architectures- SDN and NFV
+- **SDN(Software defined networking)**
+  <img width="750" alt="Screenshot 2023-11-02 185540" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/caa2279d-6d21-47ed-91b7-d96109d38d68">
+ - Network control functions are decoupled from network devices.
+ - Migration of control, form indiviudal network into accessible.
+ - Centralized management and control of network devices
+ - Rapid innovation on new network capabilities and service.
+ - Programmibilty by differnce users and developers.
+ - More granular network control.
+
+  --------------------------
+
+- **NFV(Network Funciton virtualiztion)**
+  <img width="750" alt="Screenshot 2023-11-02 185630" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/ad023350-1fc4-4c20-9d1f-ba6a22fa5d71">
+  - Up to 4g network required special hardwae to run
+  - Aims to transform network architecture
+  - Involvs implementation of network funciton in software
+  - It can run on a range of indstry standard server hardware
+  - NFV can reside in a cloud instea of on-prem.
+  - Cost effective
+  - Flexible, scalable and dynamic deployments.
+  - Once the network is software definded, the network funcitons can run on *Commercial off the shelf*(COTS) hardware.
+  - Safely offloaded to cloud  network
+
+## Mobile edge computing(MEC)
+
+  
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+ 
+  
+
 
 
 
