@@ -59,6 +59,7 @@
 <img width="500" alt="Screenshot 2023-11-07 215627" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/85c35f3f-3d38-4926-a7fe-fbaeb0e1ac9a">
 <img width="500" alt="Screenshot 2023-11-07 215651" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/bd5f0547-59e9-4c1f-a1bc-3cc764c59101">
 <img width="500" alt="Screenshot 2023-11-07 215808" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/6ea36d74-6741-4a25-a995-52a796aaf77b">
+
 ##### Option 3
 - The core network sends data to eNodeB and it splits data stream , in which part one part is sent to UE and other part is sent to gNodeB which is then sent to UE 
 - eNodeB sends data at smaller rates wheresa gNodeB sends it at a much higher rate
@@ -75,6 +76,27 @@
 - Option 6 is not officialy supported.
 #### Stand alone(Option 1,2) and Non stand alone(Option 3,4,7)
 <img width="500" alt="Screenshot 2023-11-07 222006" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/79331cf7-63e5-4482-8583-6a1a0d19e76a">
+
+
+# 5G NR
+## The RAN Protocol Stack
+- There are two types of RAN protocol stack
+- *UPPS*-Supports carrying user data between different network and UE
+- *CPPS*-Carry control information between UE and core network
+  <img width="700" alt="Screenshot 2023-11-07 231427" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/d41312bc-db4b-4145-acfb-4f3ef8400da3">
+- SDAP layer is to support quality of service
+
+### User plane protocol stack
+1.**Physical Layer** - For Efficient wireless communication
+
+2.**Medium access control layer** - Retransmission, multiplexing/demultiplexing and secheduling
+3.**ARQ Segmentation**-
+
+ 
+
+
+
+
 
 
 
