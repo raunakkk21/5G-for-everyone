@@ -157,7 +157,7 @@
 <img width="600" alt="Screenshot 2023-11-08 134212" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/0c5ff28d-6784-43ae-9263-822b7ec95fe9">
 
 - If one fails , UE's can recieve data from the other bearer.
-- In recieving side PDCP is responsible for discarding the duplicates and picking the  packet {selection diversity } if there is an error in any radio bearers.
+- In recieving side PDCP is responsible for discarding the duplicates and picking the  packet (selection diversity) if there is an error in any radio bearers.
 
 <img width="600" alt="Screenshot 2023-11-08 134613" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c48cee56-0049-4ed4-818b-89bf31bc3a7c">
 
@@ -173,6 +173,171 @@
 - *Unacknoledged mode* - When error free delivery is not required
 - *Acknowlaged mode*- For web browsing , file transfer etc.
 <img width="600" alt="Screenshot 2023-11-08 135659" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/448fc7a1-d1d4-4862-8771-0a68fd117a6e">
+
+- 6 and 12 bits for unacknowledged mode
+- 12 and 18 bits for acknowledged mode
+- In case of segmentation each SDU carries same sequence number as unsegmented SDU
+- RLC PDU are assembled as soon as possible without waiting and the MAC layer performers the concatination depending on the trasferred larger size which ultimately helps in low latency applications.-
+- In LTE the PDU's are also concatenated to one big PDU, in NR  this is not done by RLC layer.
+#### Retransmissions
+- In LTE, RLC takes care of in sequence delivery
+- In NR  this is taken care by PDCP because of two reasons:
+   - Latency
+   - Buffering requirements
+
+  
+-The RLC sends PDU's, if the PDU are succesfully received then it is delivered to higher layers
+<img width="700" alt="Screenshot 2023-11-08 203307" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c5f68186-da0a-499f-a531-b957983216b7">
+<img width="490" alt="Screenshot 2023-11-08 203532" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b699f9d9-b15c-4065-8f6a-2ab67cb32b76">
+- Duplicated action is also responsiblity of RLC
+- Time 2:missing PDU arrives,If n+1 arrives two copies then one of the copies is dicarded
+
+- Time 3: Tansmission continues with n+3,4,5
+- Time 4: Status report, indicating the missing PDU's
+- Time 5: Receipt of status report
+- Time 6: All PDU's have been succesfully received
+
+## MAC(Medium Access control)
+*Functions of MAC*
+- logical channerl multiplexing
+- hybrid-ARQ retransmissions
+- scheduling
+- multiplexing/demultiplexing for CA
+- MAC layer provide services to RLC by help of logical channels
+
+<img width="700" alt="Screenshot 2023-11-08 204633" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/82774570-22eb-4abb-817c-00c3c92fa7b2">
+
+- *Logical channel*- It is defined by type of information it carries generally classified by type of information
+- *Transport channel*- It is defined by how and what characterstics are the information is transmitted over
+<img width="600" alt="Screenshot 2023-11-08 204923" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/caf8c8cc-e48b-4adb-8fea-4c4bf9863608">
+
+*Logical channels*
+
+- PCCH is used paging of devices whose location at cell level is not known to network
+- BCCH is used for transport of network information from network to all the cell
+- CCCH is used for transmission of control information in conjuction with random access processes
+- DTCH is used for transmission of user data to and end from devices. This is logical channel used for all unicast uplink and downlink channel of user data. It handles much of data traffic
+- DCCH is used for transfer of control information to devices
+
+*Transport channels*
+- Data on transport channels are organised into transport blocks. A certain transport block can be transmitted in a TTI  in various formats in accordance with modulation scheme used,antenna configuration,etc
+- PCH is used for transport of paging information from PCCH in logical channels
+- BCH is used for transport of BCCH ,more specifically master information block
+- *DL-SCH*- It is the main transport channel used for transmission of  downlink data in in NR
+- *UL-SCH*-Uplink counterpart of downlink shared channel
+<img width="700" alt="Screenshot 2023-11-08 210741" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/1b30dfce-256e-429c-b59f-bc56700db6c6">
+- The basic principle of carrier aggregatgion from physical layer perspective is that physical layer process happens indepedently.
+
+*HARQ*- The main mechanism in transmission of 5G system is HARQ (hybrid ARQ). It is called hybrid because it supports errror correction using channel coding  and retransmission when error cannot be corrected.
+<img width="700" alt="Screenshot 2023-11-08 211926" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/f0b05960-9498-43d6-8cd8-6c239bf67dc3">
+- Each process transmit a data unit and waits for feedback before transmitting next data unit
+<img width="700" alt="Screenshot 2023-11-08 212335" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/161ad402-0777-49ee-8138-688a54ed697c">
+<img width="700" alt="Screenshot 2023-11-08 212646" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2a0ac904-fd5a-4ec0-ad16-97e894ad46ea">
+
+## MAC Scheduler
+- The job of schedule is to determine which devides should use which time frqeuency and antenna resources
+- Scheduler is a part of a MAC layer but it  interacts with differnt layer in order to carry out differnt funcitons
+<img width="700" alt="Screenshot 2023-11-08 212959" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/0a645469-f46e-48d4-8dda-5e8583c9bd30">
+<img width="700" alt="Screenshot 2023-11-08 213444" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/60fee0f3-d326-4d3c-a535-b41b75c92ce2">
+<img width="700" alt="Screenshot 2023-11-08 213745" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/7692ad60-a7f7-4c42-86fd-26f0ff26f5ed">
+
+- As the time progresses the channel conditions also change and based on that the scheduler changes the device which device get correct transmission
+
+<img width="700" alt="Screenshot 2023-11-08 214420" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/cc1165f7-6191-4c9f-aebe-a746632e3f43">
+
+- When there is huge data to be send the device can be scheduled to use larger  bandwidth and after the work is done it can switch back to smaller bandwidth
+- Adpatation is also controlled by scheduler
+<img width="700" alt="Screenshot 2023-11-08 214638" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/573cd72b-bae6-4bb7-9c1b-be3d130274dd">
+<img width="700" alt="Screenshot 2023-11-08 214900" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/fc0b54d2-cec1-40c3-b031-9dcdc5340ae2">
+
+- Most commonly used mechanism for scheduling is *Dynamic Scheduling*
+
+*Dynamic scheduling*-Dynamic scheduling, as its name implies, is a method in which the hardware determines which instructions to execute
+
+*SPS(Semi persistent scheduling)*- It is a mechanism for improving the efficiency and reliability of resource allocation for periodic data transmissions. It is used in wireless communication systems, specifically in Long-Term Evolution (LTE). It is activated whenever the need arises and then deactivated. It can be enabled or disabled using DCI
+
+
+<img width="700" alt="Screenshot 2023-11-08 215358" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/f1d87e68-1abc-4a47-aedc-777d30c736df">
+<img width="700" alt="Screenshot 2023-11-08 215510" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/9db83978-2506-48f7-9bbb-394892a0c682">
+
+##### Uplink scheduling
+- Uplink has a lot of flexibility than downlink in terms of scheduling
+- SRS(Sounding reference signals) supports only a maximum of 4 antenna ports whereas CSI-RS can use 32 antenna ports
+<img width="700" alt="Screenshot 2023-11-08 215845" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/7bbb15f5-8f81-4e6d-aca8-d27900f10be0">
+
+- Uplink supports two configured scheduling
+
+
+<img width="700" alt="Screenshot 2023-11-08 220129" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/26397268-ee32-46e5-9139-c86457f83046">
+
+## PHY(Physical Layer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
 
 
 
