@@ -271,6 +271,20 @@
 <img width="700" alt="Screenshot 2023-11-08 220129" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/26397268-ee32-46e5-9139-c86457f83046">
 
 ## PHY(Physical Layer)
+- It mainly handles mapping of transport channels to physical channels
+<img width="700" alt="Screenshot 2023-11-08 220919" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/6de2d4e0-29ea-4508-8d09-7f2f8f3f6cfe">
+<img width="700" alt="Screenshot 2023-11-08 221137" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2d64b00b-9388-43e4-82f2-3b19b5ac7cf1">
+
+
+- DCI(Downlink control information) provides necessary information for reception and decoding of downlink data
+- 
+
+
+
+  
+  
+
+
 
 
 
