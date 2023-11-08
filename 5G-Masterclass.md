@@ -85,12 +85,117 @@
 - *CPPS*-Carry control information between UE and core network
   <img width="700" alt="Screenshot 2023-11-07 231427" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/d41312bc-db4b-4145-acfb-4f3ef8400da3">
 - SDAP layer is to support quality of service
+- Each down layer provides services to upper layers.
 
 ### User plane protocol stack
-1.**Physical Layer** - For Efficient wireless communication
+1.**Physical Layer(PHY)** - For Efficient wireless communication.
 
-2.**Medium access control layer** - Retransmission, multiplexing/demultiplexing and secheduling
-3.**ARQ Segmentation**-
+2.**Medium access control layer(MAC)** - Retransmission, multiplexing/demultiplexing and secheduling
+<img width="650" alt="Screenshot 2023-11-08 124627" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/593e3ed9-9390-44c0-b88b-7a4b93d39978">
+
+3.**Radio link control layer(RLC)**- ARQ(Automatic repeat query) segmentation
+
+4.**Packet data convergence protocol(PDCP)**-Header compression, ciphering and intergrity protection and duplicate removal.
+
+5.**Service data adaption protocol(SDAP)**-Quality of service
+
+#### Service data unit(SDU) and Protocol data unit(PDU)
+<img width="700" alt="Screenshot 2023-11-08 125704" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/6c0d4819-c728-4646-822f-3ef0de67a438">
+
+<img width="700" alt="Screenshot 2023-11-08 130028" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/769ca761-4662-45c0-93f5-fc8b07552bf7">  
+
+
+### Control plane protocol stack
+1.**Non access stratum(NAS)**- Authentication, security and idle model procedures also assigns IP address
+2.**Radio resource control(RRC)**-System information, radio bearers and measurement configuration; responsbile for RAN related control plane procedures i.e broadcasting systum
+
+## SDAP(Service data adaptation protocol)
+- *Types of traffic*
+<img width="700" alt="Screenshot 2023-11-08 131256" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/bdf6a2ad-664a-4dd1-946a-418ad01776c6">
+
+- *QoS flows*
+  - When addtional QoS flow is required it can be established when corresponding application triggers traffic.
+
+ <img width="700" alt="Screenshot 2023-11-08 131407" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/e1b78799-de89-417e-a55d-f7304fe1525f">  
+ 
+
+   - QoS flow types
+     - *GBR*- Guranteed bit rate QoS flow
+     - *Non- GBR*- Used for traffic that are more bursty in nature
+     - *Delay critical*- for self driving cars and remote control devices
+     
+<img width="450" alt="Screenshot 2023-11-08 131921" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c5ae912b-6ace-490c-9af6-992b7a06482e">  
+<img width="700" alt="Screenshot 2023-11-08 132151" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/66c97764-fbc9-4484-af6d-137a32d6ce20">
+
+### 5QI(5G QoS identifiers)
+<img width="600" alt="Screenshot 2023-11-08 132242" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/9f520bc2-b042-45d5-b848-bfc77c49c214">
+
+#### Multiplexing
+<img width="700" alt="Screenshot 2023-11-08 132342" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b98a51d7-c332-4249-8093-d9f62c9f6e5d">
+
+#### Uplink QoS
+- *Reflective mapping*- When the device use same QoS flow and radio bearer as in downlink 
+- *Explicit mapping*- When the devie is configured to use specific QoS flow and uplink bearer using RRC signaling
+
+<img width="700" alt="Screenshot 2023-11-08 132941" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/5ce1e10b-a2a2-4b66-9902-62160166231f">
+
+## PDCP(Packet data convergence protocol)
+*Fucntions of PDCP*
+- Header compression
+- Ciphering and integrity protection
+- Routing and duplication of split bearers
+- In sequence delivery
+<img width="600" alt="Screenshot 2023-11-08 133217" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3a9eb315-06d6-47bb-85a3-59477856d7b6">
+*ROHC*- Robust header compression
+<img width="600" alt="Screenshot 2023-11-08 133722" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/e748164d-f9c4-4f6e-aa6a-064bde5c2ba5">
+<img width="600" alt="Screenshot 2023-11-08 134123" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/f0f78b07-4840-45d3-b518-579d98fb8c31">
+<img width="600" alt="Screenshot 2023-11-08 134212" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/0c5ff28d-6784-43ae-9263-822b7ec95fe9">
+<img width="600" alt="Screenshot 2023-11-08 134613" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c48cee56-0049-4ed4-818b-89bf31bc3a7c">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+ 
+
 
  
 
