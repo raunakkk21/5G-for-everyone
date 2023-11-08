@@ -146,11 +146,47 @@
 - Routing and duplication of split bearers
 - In sequence delivery
 <img width="600" alt="Screenshot 2023-11-08 133217" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3a9eb315-06d6-47bb-85a3-59477856d7b6">
-*ROHC*- Robust header compression
+
+- For small data packets, header itself would itself be as long as data packet.
+- PDCP performs header compression to reduce header length to a couple of bytes for wireless trasmission
+- Decompression of header size before it is transmitted over IP protocols in the wired network is also done by PDCP
+- The header compression scheme is based on Robust header Compression(ROHC) protocol
+
 <img width="600" alt="Screenshot 2023-11-08 133722" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/e748164d-f9c4-4f6e-aa6a-064bde5c2ba5">
 <img width="600" alt="Screenshot 2023-11-08 134123" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/f0f78b07-4840-45d3-b518-579d98fb8c31">
 <img width="600" alt="Screenshot 2023-11-08 134212" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/0c5ff28d-6784-43ae-9263-822b7ec95fe9">
+
+- If one fails , UE's can recieve data from the other bearer.
+- In recieving side PDCP is responsible for discarding the duplicates and picking the  packet {selection diversity } if there is an error in any radio bearers.
+
 <img width="600" alt="Screenshot 2023-11-08 134613" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c48cee56-0049-4ed4-818b-89bf31bc3a7c">
+
+- PDCP acts as a sequence number to ensure in-sequence delivery
+
+## RLC(Radio Link Control)
+*Function of RLC*
+- Segmentation
+- ARQ - Retransmissions
+<img width="600" alt="Screenshot 2023-11-08 135047" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/6f3a79b9-3463-4426-adf9-aa9369311c3c">
+
+- *Transparent mode*- In these cases the channels are already designed in such a way that there is no need for segmentation and retransmission
+- *Unacknoledged mode* - When error free delivery is not required
+- *Acknowlaged mode*- For web browsing , file transfer etc.
+<img width="600" alt="Screenshot 2023-11-08 135659" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/448fc7a1-d1d4-4862-8771-0a68fd117a6e">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
