@@ -297,9 +297,13 @@
 <img width="700" alt="Screenshot 2023-11-09 121927" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c8651517-11df-4e1b-b056-d7c3ad3dcc39">
 <img width="700" alt="Screenshot 2023-11-09 122025" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/df5c8b49-af50-4b94-9585-0bb5ca1ddf12">
 <img width="700" alt="Screenshot 2023-11-09 122156" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/03eef58d-e782-4b2b-9817-fe16005e817d">
+
 ## The Physical layer structure
+
 *Modulation scheme*
+
 <img width="700" alt="Screenshot 2023-11-09 122448" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/329deaa8-eb24-4a24-8351-322ccc379bbd">
+
 
 - *OFDM*- It can be used to transmit a wideband signal using multiple narrow band signals
 - Larger cells would require large cyclic prefix and vice vers
@@ -307,22 +311,120 @@
 - High peak power to average power ratio
 <img width="700" alt="Screenshot 2023-11-09 122707" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/85b4c044-5358-4245-b63b-0519c3c8c26f">
 <img width="700" alt="Screenshot 2023-11-09 122958" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/9321aeb2-2776-456c-b39a-ac513eae5f48">
+
 - For example-if vehicular technology, if one vehicle has to speak to another vehicle then instead of speaking to gNB they both can directly communicate between one another.
 <img width="700" alt="Screenshot 2023-11-09 123426" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/110b6f62-a141-49d0-8ca1-ea0121379eb6">
+
 - 240kHz  subcarrier spacing is not used for data channels and it supported only for SS block  
 <img width="700" alt="Screenshot 2023-11-09 123745" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/72869a43-4913-46fa-997d-1dd38bc85565">
+
 *Time Domain*
+
 <img width="700" alt="Screenshot 2023-11-09 123859" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3831908f-37bd-4aa2-834b-285e670d04df">
 <img width="700" alt="Screenshot 2023-11-09 124138" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b48ac2c5-bbf7-4fc2-9e2e-f8b9340095f5">
+
 ## RRC and NAS
+
 - Responsible for connection setup, mobility and security related functions
+
 <img width="700" alt="Screenshot 2023-11-09 124320" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2cb81503-386b-44a8-8456-cd45197857e7">
+
 - RRC inactive is newly introduced in NR
-  <img width="700" alt="Screenshot 2023-11-09 124646" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/84ccc122-d492-42d8-844d-910b94d5aba1">
+
+<img width="700" alt="Screenshot 2023-11-09 124646" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/84ccc122-d492-42d8-844d-910b94d5aba1">
+
 ## Mobility functions
+
 <img width="700" alt="Screenshot 2023-11-09 125245" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/1c42085c-9513-458a-96bf-9d1fd3778311">
+
 - Connected mode mobility is triggered by network whereas idle and inactive based mobility was based on decisions by device
-<img width="700" alt="Screenshot 2023-11-09 125540" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/cd96137f-be94-4b88-af99-50f6c2bbe83c">
+
+<img width="700" alt="Screenshot 2023-11-09 125540" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/cd96137f-be94-4b88-af99-50f6c2bbe83c">  
+
+## Initial access procedures
+- *Cell search*= Procedure by which a UE acquires time and frequency synchronization with a cell and detects the cell Id of that cell
+<img width="700" alt="Screenshot 2023-11-09 132449" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/cbb9ec16-558e-4db1-be8e-13c6df93c32d">
+
+*Working of cell search*
+- In LTE there are tens of different bands, UE starts scanning a set of frquency band that is preferred. This informationis available in SIM card
+- In LTE carrier raster is equal to synchronization raster which is 100kHz
+- In LTE sync signals are transmitted every 5ms
+- In NR there are much more bands than LTE
+- In NR sync signals are transmitted every 20ms before checking next possible location
+-  To improve the efficiency the Sync raster and carrier raster are decoupled
+
+<img width="700" alt="Screenshot 2023-11-09 133413" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3090c77a-78ed-43f6-a648-0b943be740fa">
+
+- PSS can take one of  the three possible values
+- SSS can take 336 possible values
+<img width="700" alt="Screenshot 2023-11-09 133635" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/0ce26fae-6431-4dfe-8dd6-8c208ebb8b39">
+<img width="700" alt="Screenshot 2023-11-09 133743" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/22cde1ee-528b-4f93-9799-3efe12aacddc">
+<img width="700" alt="Screenshot 2023-11-09 133901" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b8c19f99-add8-44bf-bc87-9c57ae5d31ac">
+<img width="531" alt="Screenshot 2023-11-09 134014" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c0504f50-7eb0-4adf-92d3-da3dfc556515">
+- UE decides if to camp or not
+
+## RAP(Random access procedures)
+- *Triggers when*
+   - RRC idle to RRC connected
+   - Uplink data
+   - Sync lost
+   - Sync during handover
+ 
+<img width="700" alt="Screenshot 2023-11-09 135056" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/165e9ce8-32a3-4df2-8647-fca650ea7c9f">  
+<img width="700" alt="Screenshot 2023-11-09 140109" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c563bc89-7df5-453e-9a3f-c5c4ac26800c">
+<img width="700" alt="Screenshot 2023-11-09 140238" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/282a5828-b223-490f-8e32-d7f80c350336">
+- Same preamble= same temp ID = Collision
+<img width="700" alt="Screenshot 2023-11-09 140517" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/2fd50aef-163d-494e-934d-4a88794ced29">
+
+<img width="523" alt="Screenshot 2023-11-09 140717" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/bdddab59-03bc-4ddc-86cc-9449f7684f57">
+
+#### CFRA(Contention free random access)
+- *Triggers*:
+   - Handover
+   - DL data for UE
+   - Non stand alone mode, NR cell
+
+- gNB makes sure that id does not give same preamble to more than 1 device
+- CBRA is triffered by UE whereas CFRA is triggered by gNB
+  
+<img width="700" alt="Screenshot 2023-11-09 141230" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/cebf9959-9e5d-427e-9817-49cb88dad93c">
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
