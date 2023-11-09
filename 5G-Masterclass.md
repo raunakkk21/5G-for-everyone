@@ -276,8 +276,100 @@
 <img width="700" alt="Screenshot 2023-11-08 221137" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2d64b00b-9388-43e4-82f2-3b19b5ac7cf1">
 
 
-- DCI(Downlink control information) provides necessary information for reception and decoding of downlink data
-- 
+- *DCI*(Downlink control information) provides necessary information for reception and decoding of downlink data
+- *UCI*(Uplink control information) which  provides scheduler information  about the situation at the device
+
+<img width="700" alt="Screenshot 2023-11-09 120604" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/4d7323b0-e3b4-481c-b7e2-7c9386e18444">
+
+- *CRC(Cyclic redundancy check)*- Error detection in transport block level.It also request retransmissions.Its length can vary according to payloads ; 24 bit CRC is used for payloads larger than 3824 bits and if the payload is smaller than that a 16 bit CRC is used
+<img width="700" alt="Screenshot 2023-11-09 121001" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/d4118566-f31e-413c-9149-2ef87b6b1414">
+
+- *LDPC(Low density parity check)*
+<img width="700" alt="Screenshot 2023-11-09 121426" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3d911aa5-401f-44f6-83dc-7d5fad3da648">
+
+- *Code Block segmentation*
+<img width="524" alt="Screenshot 2023-11-09 121157" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/17c6d2d3-ea4c-48ff-98a6-4120c0ee3d9a">
+
+- *Rate matching*- To extract the set of bits to be transmitted
+<img width="700" alt="Screenshot 2023-11-09 121547" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b95fcdae-bc66-4b1d-814d-b54806ad6e05">
+<img width="700" alt="Screenshot 2023-11-09 121723" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/bb93fea5-8017-4a6b-8487-38dd6fbda699">
+<img width="700" alt="Screenshot 2023-11-09 121819" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/406068c4-6de0-4db4-9bce-425170f73126">
+<img width="700" alt="Screenshot 2023-11-09 121927" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/c8651517-11df-4e1b-b056-d7c3ad3dcc39">
+<img width="700" alt="Screenshot 2023-11-09 122025" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/df5c8b49-af50-4b94-9585-0bb5ca1ddf12">
+<img width="700" alt="Screenshot 2023-11-09 122156" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/03eef58d-e782-4b2b-9817-fe16005e817d">
+## The Physical layer structure
+*Modulation scheme*
+<img width="700" alt="Screenshot 2023-11-09 122448" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/329deaa8-eb24-4a24-8351-322ccc379bbd">
+
+- *OFDM*- It can be used to transmit a wideband signal using multiple narrow band signals
+- Larger cells would require large cyclic prefix and vice vers
+*Disadvantage of OFDM*
+- High peak power to average power ratio
+<img width="700" alt="Screenshot 2023-11-09 122707" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/85b4c044-5358-4245-b63b-0519c3c8c26f">
+<img width="700" alt="Screenshot 2023-11-09 122958" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/9321aeb2-2776-456c-b39a-ac513eae5f48">
+- For example-if vehicular technology, if one vehicle has to speak to another vehicle then instead of speaking to gNB they both can directly communicate between one another.
+<img width="700" alt="Screenshot 2023-11-09 123426" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/110b6f62-a141-49d0-8ca1-ea0121379eb6">
+- 240kHz  subcarrier spacing is not used for data channels and it supported only for SS block  
+<img width="700" alt="Screenshot 2023-11-09 123745" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/72869a43-4913-46fa-997d-1dd38bc85565">
+*Time Domain*
+<img width="700" alt="Screenshot 2023-11-09 123859" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/3831908f-37bd-4aa2-834b-285e670d04df">
+<img width="700" alt="Screenshot 2023-11-09 124138" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/b48ac2c5-bbf7-4fc2-9e2e-f8b9340095f5">
+## RRC and NAS
+- Responsible for connection setup, mobility and security related functions
+<img width="700" alt="Screenshot 2023-11-09 124320" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/2cb81503-386b-44a8-8456-cd45197857e7">
+- RRC inactive is newly introduced in NR
+  <img width="700" alt="Screenshot 2023-11-09 124646" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/84ccc122-d492-42d8-844d-910b94d5aba1">
+## Mobility functions
+<img width="700" alt="Screenshot 2023-11-09 125245" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/1c42085c-9513-458a-96bf-9d1fd3778311">
+- Connected mode mobility is triggered by network whereas idle and inactive based mobility was based on decisions by device
+<img width="700" alt="Screenshot 2023-11-09 125540" src="https://github.com/raunakkk21/5G-for-everyone/assets/143111163/cd96137f-be94-4b88-af99-50f6c2bbe83c">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
 
 
 
