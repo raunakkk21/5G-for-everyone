@@ -389,6 +389,272 @@
   
 <img width="700" alt="Screenshot 2023-11-09 141230" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/cebf9959-9e5d-427e-9817-49cb88dad93c">
 
+## 5G core network
+### Identifiers
+- Identifiers are the founding block in 5G system
+*Device identity*
+- PEI
+
+*Subscription identity*
+- SUPI
+- SUCI
+- GUTI
+
+- **PEI(Permanent equipment identifier**
+
+  <img width="700" alt="Screenshot 2023-11-09 192454" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/99ce6991-c205-487f-8f83-c46f6b81764f">
+
+- **Subsription identity**
+- IMSI is stored in sim card or embedded sim card in device
+<img width="700" alt="Screenshot 2023-11-09 192859" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/7a8bf36a-6e4c-44b3-a6e0-972f14faf288">
+- SUCI is encrypted form of SUPI
+<img width="700" alt="Screenshot 2023-11-09 193332" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/d95d8ab5-8908-49ff-8b5b-c9badc29a0de">
+<img width="700" alt="image" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/67787cea-f378-4bcb-aa8d-0b1cdf5ce703">
+
+## Service Based Arhitecture
+<img width="700" alt="Screenshot 2023-11-09 195646" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/301da0c6-4224-4411-8b0d-453e66ea97d0">
+
+- Monolithic : Software applications are built in one signle entity
+
+- Microservices : Application broken down into different services , each service performes a very simple operation and different services can communicate with each other using communication simple interface
+flexible deployment.
+
+
+<img width="700" alt="Screenshot 2023-11-09 200033" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/79aa0e1c-5f5f-4b74-a0d5-b3fe44a93120">
+<img width="700" alt="Screenshot 2023-11-09 200244" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e5c020f6-2767-4a74-adaf-6027fd52e470">
+<img width="700" alt="Screenshot 2023-11-09 200404" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/5e419cde-7962-44e9-843f-cb7396665ebe">
+<img width="507" alt="Screenshot 2023-11-09 200457" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/77395f96-b8fa-471b-b173-5679e339eee4">
+<img width="506" alt="Screenshot 2023-11-09 200544" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f44b2f2a-8080-4958-9a3e-ccc8f445bf6e">
+
+- *REST*- Representational state transfer, it defines a set of rules for how to implement the communication between software modules in a network architecture
+<img width="700" alt="Screenshot 2023-11-09 200734" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f3ee0b40-1286-408d-9c6e-5d81bf9952a1">
+<img width="700" alt="Screenshot 2023-11-09 202840" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/a1f41cd6-ec8c-44f3-ae63-da0b326bf979">
+
+## AMF(Access and mobility management functions)
+<img width="700" alt="Screenshot 2023-11-09 203004" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/82839829-d886-4a5d-8834-fc3bfa3fed45">
+<img width="700" alt="Screenshot 2023-11-09 203641" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/fc4ad8d6-add0-4ed3-814e-520ee2e897a6">
+<img width="700" alt="Screenshot 2023-11-09 203817" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/6263963f-092c-4ebf-ae50-3e2c3ebbf2e2">
+- For example- When the device is powered on, it may intiate a connection request then gets conncected.
+<img width="700" alt="Screenshot 2023-11-09 203956" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b34fe969-61cc-4526-b8ed-141cb79abc05">
+
+<img width="700" alt="Screenshot 2023-11-09 204143" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/99061fcd-fe6e-4f07-be49-361ab0c6d669">
+
+- Using this process AMF always keeps track where the device is corrently located
+
+
+<img width="700" alt="Screenshot 2023-11-09 204450" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/0c804eed-6060-4ef0-aed1-e2bc0761acd9">
+
+<img width="700" alt="Screenshot 2023-11-09 204626" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/7efb3720-482b-4568-8930-0edd56dbf19f">
+
+## SMF(Session management function)
+- PDU session management is all the activites like setting up or modifying a PDU session
+- A device can have mulitple PDU session for different services
+
+<img width="700" alt="Screenshot 2023-11-09 205126" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/ddd2ddad-2437-4a62-826e-023c86c2d247">
+
+<img width="700" alt="Screenshot 2023-11-09 205155" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/035e4e67-f03f-44e0-8f57-4b0dca0e2a60">
+
+<img width="700" alt="Screenshot 2023-11-09 205321" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/cda2dc6d-1cea-44da-88cb-c4f33267950b">
+
+<img width="700" alt="Screenshot 2023-11-09 205423" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/d493c6b1-b549-49dc-851d-c6b24c849afb"> 
+
+<img width="700" alt="Screenshot 2023-11-09 205740" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e09e8985-70cd-4d3f-82d9-c58069418c10">
+
+- *Session continuity-PDU Session Anchor*- When PDU  session is established a UPF is identified as the PDU session anchor; When the device moves around the routing path of device might change but no matter which gNB or UPF the traffic passes through at the end the Session anchor is the UPF which provides connectivity to data network.
+
+
+<img width="700" alt="Screenshot 2023-11-09 210147" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/bd14b561-9143-4594-97ac-d78d9ea1a639">   
+
+- *SSC Mode 1*- The same UPF  is used as the PDU session anchor, the benifit of that is the device will retain the IP address
+- *SSC Mode 2*- When the device moves a new PDU session is created wtih new UPF as PDU session anchor characterised by (break before make) which means connectivity is first released before a new PDU session is created. Connectivity is disrupted for some time in this mode.
+- *SSC Mode 3*-When device moves before a new PDU session is released a new PDU session is created. In this the device will have two IP addresses for a very short period of time.
+
+
+<img width="700" alt="Screenshot 2023-11-09 210812" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3fe83656-1467-40cd-a52d-5bbc05fdb510">
+
+
+## UDM(Unified data management) and UDR(Unified data repository)
+*Stateless design*- Stateless design in 5G refers to a process or function that doesn't store information about the status of the network.
+
+<img width="700" alt="Screenshot 2023-11-09 212431" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/15420cb2-0d81-4f42-a830-a8d62aa4bd92">
+
+<img width="700" alt="Screenshot 2023-11-09 212610" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/65c3b062-35fe-4d3e-a1e7-5c7da8bd0675">
+
+### UPF(User plane function)
+
+<img width="700" alt="Screenshot 2023-11-09 213009" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/58261049-db27-4e8d-b4fe-9f5fbbb4ca90">
+
+ 
+
+<img width="700" alt="Screenshot 2023-11-09 213331" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/fcc26c7e-9b30-40ab-9dd3-6c1a00095514">
+
+## PCF(Policy control function)
+
+<img width="700" alt="Screenshot 2023-11-09 213919" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/786766d7-e641-436f-9bbc-895209553bc2">
+
+
+
+<img width="700" alt="Screenshot 2023-11-09 214601" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/466b925e-43ea-4988-8b3b-c3249fb202c8">
+
+
+<img width="700" alt="Screenshot 2023-11-09 214735" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c03fcfb3-137b-46fe-ab20-6fd12e9fab4b">
+
+
+<img width="700" alt="Screenshot 2023-11-09 214818" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c1d9754d-bf7e-488e-a64d-bd008fc27572">
+
+## Registration procedure
+- When a 5G device is turned on firstly it eneds to register itself to 5G network before it can accesss 5G services.
+
+<img width="501" alt="Screenshot 2023-11-09 215015" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/d483d4f2-1c83-44f4-be16-4ad956edd8ff">
+
+- *Intial registration*- Used when device is intiated/power on
+- *Periodic registration* - To ensure that the device has not ran out of battery
+- *Mobility registration*- It is used when the device moves to a new location
+- *Emergency registration*- It is used when the device want to access emergency calls, it needs to first register itself  
+
+
+<img width="700" alt="Screenshot 2023-11-09 220107" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/09774bce-448a-4c77-a0af-4b23b1afc600">
+
+
+*Deregistration procedure*- When the  device no longer to use the network then it needs to first deregsiter itself from network
+
+<img width="700" alt="Screenshot 2023-11-09 220348" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f0a7dba2-da22-478b-8bbe-b5b4635775f1">
+
+## PDU session establishment
+- When a new PDU session is created
+- When a PDU session is handover from a non-3GPP access
+- Initiated by UE
+   - Can be triggered by the network
+
+<img width="700" alt="Screenshot 2023-11-09 220930" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e8c652fb-c1bb-4b57-94bb-4b9540fb0cc7">
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
      
 
 
