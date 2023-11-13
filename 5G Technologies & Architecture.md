@@ -92,6 +92,41 @@
 <img width="700" alt="Screenshot 2023-11-13 180614" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e2fb0046-4637-4787-a486-767003246c41">
 
 
+### Resource Block
+- In 5G NR resource block is only defined in frequency domain and not in time domain having 12 consecutive block vertically
+- In case of LTE resource block was defined in both frequency and time domains.
+- As the spacing of sub carriers increased the duration of time slot is increased.
+<img width="700" alt="Screenshot 2023-11-13 212236" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c2fae0fe-bdbf-4d48-923c-8c26b9c6617b">
+
+### Resource element
+- It is defined in both time and frequency domain
+<img width="700" alt="Screenshot 2023-11-13 212815" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/8b476207-bb84-42d7-bbf5-be2ea51e2436">
+
+### Modulation in 5G
+- *QAM*- Quadrature amplitude modulation
+- When the distance between UE and tower increases and if there are obstacles between them, we need to downgrade the modulation scheme.
+- For example
+   - 16 QAM= 4 bits per symbol
+   - 256 QAM= 8 bits per symbol, i.e it is defined in the power of 2
+<img width="700" alt="Screenshot 2023-11-13 212922" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/2942c414-d454-4af7-ad21-4522537d6312">
+
+### Cloud RAN
+<img width="700" alt="Screenshot 2023-11-13 213508" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3107841d-e559-4f9d-b9bf-93c9d2813d51">
+<img width="700" alt="Screenshot 2023-11-13 213929" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/80e03a37-672f-44a4-891f-699209f3fff6">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
