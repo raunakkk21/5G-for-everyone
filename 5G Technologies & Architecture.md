@@ -38,12 +38,15 @@
 <img width="700" alt="Screenshot 2023-11-13 132754" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b9a517c3-15df-4dd8-b958-cbace63bca0a">
 
 --------
+
 **Roadmap to 5G**
+
 <img width="700" alt="Screenshot 2023-11-13 132842" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f06ced0c-f60c-4b61-bdbd-cabfee33afeb">
 
 
 ## 5G architecture
 <img width="700" alt="Screenshot 2023-11-13 133001" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/27818bba-524b-4cfd-a9dc-334817acba1e">
+
 - 5G is all IP architecture which means all calls and data are handled in packets.
 
 - **Non Stand alone vs Stand alone**
