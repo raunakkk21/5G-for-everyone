@@ -241,8 +241,47 @@
 
 ### 5G Network identifiers
 - Identitiy of the device is called PLMN-ID which is combination of mobile country code and mobile network code.
-- 
+
 <img width="700" alt="Screenshot 2023-11-14 215412" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/103f07cb-ec26-4898-b3bc-59a3533e5581">
+
+
+## UE Power on procedure
+- *PSS*- Primary synchronization sequence
+- *SSS*- Secondary synchronization sequences
+- Reading PSS and SSS will enable the device to decode the broadcast information on each of the cells
+<img width="700" alt="Screenshot 2023-11-14 234951" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/9e8f66d7-f391-4662-8d7c-82b3ff85a397">
+
+<img width="700" alt="Screenshot 2023-11-14 235533" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b8581167-6ec5-4a66-8465-441c63589430">
+
+- UE goes to the best cell in the selected PLMN network
+
+<img width="700" alt="Screenshot 2023-11-14 235939" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/202f93ca-7f34-4418-8ce2-46a00c165ae6">
+
+<img width="700" alt="Screenshot 2023-11-15 000009" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/0b8e73a9-8111-496e-a35c-185eec53e700">
+
+<img width="700" alt="Screenshot 2023-11-15 000055" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/5b20e50c-977e-4d32-9115-bc3879c5262c">
+
+<img width="700" alt="Screenshot 2023-11-15 000121" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/16d6cf35-20aa-4071-956e-7dd11e79fb91">
+
+<img width="700" alt="Screenshot 2023-11-15 000224" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/a2259972-2f1a-46fe-9a67-d91901080738">
+
+<img width="700" alt="Screenshot 2023-11-15 000305" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/09a71a79-b121-49c6-9f80-10359a16efd6">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
