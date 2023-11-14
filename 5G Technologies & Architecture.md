@@ -188,6 +188,105 @@
 <img width="700" alt="Screenshot 2023-11-14 002935" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/d8013751-9d4a-4134-b0e2-05a1893384a3">
 
 
+## NFV(Network Function Virtualization)
+<img width="700" alt="Screenshot 2023-11-14 194904" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/9f93f930-f6f7-4574-ba59-ae66286ffa69">
+
+<img width="700" alt="Screenshot 2023-11-14 195203" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/ef1c5e70-fc84-42eb-9180-1b3f13abb101">
+
+
+#### NFV Architecture by ETSI
+- *ETSI*-European Telecommunications Standards Institute
+
+<img width="700" alt="Screenshot 2023-11-14 195344" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/76b4dda5-5458-4763-9033-9ee566e8e4d7">
+
+
+
+<img width="700" alt="Screenshot 2023-11-14 195638" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/38c361e5-d445-4b8a-965c-3c268edbb031">
+
+<img width="700" alt="Screenshot 2023-11-14 201200" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/ef3f67e3-08e5-4294-acb2-1a67b7d2a776">
+
+### Network Slicing
+<img width="700" alt="Screenshot 2023-11-14 201339" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/2a9c61ca-d264-4429-86da-ed1a4e74d197">
+
+<img width="700" alt="Screenshot 2023-11-14 201445" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/6e4d0161-973d-44b5-aff9-336f3bbecef8">
+
+## NRF(Network Repository Function)
+- If NSSF wants to know where the network functions of SMF are located then NRF receives request of NF
+- All network function have to  register themselves with NRF so that it can facilitate  their discovery by other Network Function
+<img width="700" alt="Screenshot 2023-11-14 204622" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/cca106f0-33ee-4b1c-aa2d-7d402f2843a9">
+
+### NSSF(Network slice selection function)
+<img width="700" alt="Screenshot 2023-11-14 204715" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/983b51fb-1464-4caa-a6a8-aa4d94e40451">
+
+### NEF(Network Exposure Function)
+- It plays a key role in security of the devices in network
+<img width="700" alt="Screenshot 2023-11-14 205059" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/1b619a1c-5ac1-4770-aa0d-5b57eaccf724">
+
+
+## Identifiers in 5G
+- IMSI(International mobile subscriber identity) for 3GPP access
+- NAI(Network access identifier) for non 3GPP acsess
+- SUCI is called after encryption in SUPI
+- The device uses SUCI to register itself on the network after powering on first time
+<img width="700" alt="Screenshot 2023-11-14 205735" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b9907413-1b58-4c02-b310-c09504b92ab0">
+
+<img width="700" alt="Screenshot 2023-11-14 214556" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/42b5b394-2db6-495b-a726-25754c33258a">
+
+
+## Tracking areas in 5G
+- In case of idle mode, the location of the device is known at the level or tracking area. Network does not know that in which cell the device is located.
+- The purpose of building tracking area is to reduce the signaling load while mobile is idle as in that case we need to only update the location of device when it moves from one area to other.
+- In case when the device is moving very fast i.e on a train, in that case the network can assign a list of tracking areas to this device so that if the device is moving very fast so that it does not need to update its location to the network.
+<img width="700" alt="Screenshot 2023-11-14 214839" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/2ed8180a-3cd5-4324-9b0f-394528f09d9b">
+
+### 5G Network identifiers
+- Identitiy of the device is called PLMN-ID which is combination of mobile country code and mobile network code.
+- 
+<img width="700" alt="Screenshot 2023-11-14 215412" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/103f07cb-ec26-4898-b3bc-59a3533e5581">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
