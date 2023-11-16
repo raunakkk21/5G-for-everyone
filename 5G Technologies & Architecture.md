@@ -249,6 +249,7 @@
 - *PSS*- Primary synchronization sequence
 - *SSS*- Secondary synchronization sequences
 - Reading PSS and SSS will enable the device to decode the broadcast information on each of the cells
+
 <img width="700" alt="Screenshot 2023-11-14 234951" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/9e8f66d7-f391-4662-8d7c-82b3ff85a397">
 
 <img width="700" alt="Screenshot 2023-11-14 235533" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b8581167-6ec5-4a66-8465-441c63589430">
@@ -266,6 +267,74 @@
 <img width="700" alt="Screenshot 2023-11-15 000224" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/a2259972-2f1a-46fe-9a67-d91901080738">
 
 <img width="700" alt="Screenshot 2023-11-15 000305" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/09a71a79-b121-49c6-9f80-10359a16efd6">
+
+
+
+### UE idle and connected modes
+- A network does not know that exactly in which cell the device is located
+- Whenever there is an incoming call on this mobile the network will page all the mobiles of tracking area in which the mobile is currently located.
+
+<img width="700" alt="Screenshot 2023-11-16 203547" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/a39c211e-21c6-4006-9ddb-28153cda3cf3">
+
+<img width="700" alt="Screenshot 2023-11-16 203903" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/061e804d-104d-4d93-9b58-383d6cb0a54c">
+
+### PDU session establishment
+- Once the mobile is registered with network and wants to avail data services of the network, this mobile will generate PDU session establishment request to the network.
+- Now AMF will notify SMF to perform the Policy check and PCF will then do policy decision and this decision will be based upon what is the condition of the network.
+- PCF will decide whether the request can be entertained or not
+- If the decision is postive then the SMF will coordinate with AMF and UPF in order to establish user data in PDU session
+
+<img width="700" alt="Screenshot 2023-11-16 203948" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/fc8756b8-c128-44db-988c-15d10ec27e57">
+
+### UE Paging procedure
+<img width="700" alt="Screenshot 2023-11-16 205313" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3447aaaa-b77e-48b2-a576-c2e9fa7eacde">
+
+
+### Traking Area update procedure
+- If a mobile moves from one cell to another then it intiates Tracking area update message
+- Now it will send tracking area update to AMF
+- AMF will now delete the current tracking area and establish new tracking area and send this information to the moblie
+
+
+
+<img width="700" alt="Screenshot 2023-11-16 205644" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/d995f930-1078-4bc2-8040-816f7c73aa9f">
+
+
+### Handovers in 5G
+- Handovers always takes place when the UE is connected modes
+
+<img width="700" alt="Screenshot 2023-11-16 210348" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3eda964e-edf6-4bb1-8e2e-d081583df5e4">
+
+*Types of Handovers in 5G*
+- The two gNB need to coordinate with each other
+
+<img width="700" alt="Screenshot 2023-11-16 210623" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3f522cf4-d7bb-458d-9496-14b40221abb4">
+
+<img width="700" alt="Screenshot 2023-11-16 210857" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/33144416-9099-4199-b9e9-22e14834c274">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
