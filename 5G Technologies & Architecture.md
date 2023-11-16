@@ -312,6 +312,189 @@
 
 <img width="700" alt="Screenshot 2023-11-16 210857" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/33144416-9099-4199-b9e9-22e14834c274">
 
+## 5G Service based architecture
+<img width="700" alt="Screenshot 2023-11-16 212702" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e2a78599-57de-433a-8be4-711e7ec46caa">
+
+<img width="700" alt="Screenshot 2023-11-16 213205" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/15427c2b-e255-473d-abea-5ec221606a77">
+
+### Mechanism for NF services
+<img width="700 " alt="Screenshot 2023-11-16 213407" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/8df140bd-ccb7-4725-a6bb-41c9ccf89547">
+
+
+###  HTTP/2 for 5G core network
+- HTTP2 makes it easy to virtualize the system in the network
+<img width="700" alt="Screenshot 2023-11-16 213601" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f36a7cd3-7ab7-4750-8ea3-6f3d3889f73f">
+
+<img width="700" alt="Screenshot 2023-11-16 214525" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/0964088a-9fef-4c93-8c19-566bd5d54cbb">
+
+<img width="700" alt="Screenshot 2023-11-16 214920" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3d638fb2-89e6-41fd-b18e-771faf9dd938">
+
+### Concept of resource
+- Whenever we create a PDU session, it is basically a resource
+
+<img width="700" alt="Screenshot 2023-11-16 220401" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e9790c12-df2f-4e9e-bc02-d0ef866aa1bf">
+
+ ### HTTP methods used in 5GC
+<img width="700" alt="Screenshot 2023-11-16 220456" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/8a924178-4bc0-458c-95fe-49915d6f080d">
+
+<img width="700" alt="Screenshot 2023-11-16 220705" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/e9e9739a-3f48-4793-acf0-f22693621251">
+
+<img width="700" alt="Screenshot 2023-11-16 232106" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f70ba226-7307-4190-8843-afb531c17d7d">
+
+<img width="700" alt="Screenshot 2023-11-16 233210" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/0cae295e-f120-4f3f-bc66-c3544373d0d7">
+
+<img width="700" alt="Screenshot 2023-11-16 233301" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c9847a18-6227-4be7-b40c-f1c340c77b82">
+
+
+
+- nf instance id is a unique id which is unique inside the network that is created by this registering network function for the registration inside nrf
+
+<img width="700" alt="Screenshot 2023-11-16 233826" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/8ce00188-f5d1-4468-ba34-f50087de1272">
+
+<img width="700" alt="Screenshot 2023-11-16 234608" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/3bf5af40-382a-4d6f-b28f-6c45d3c3927b">
+
+<img width="700" alt="Screenshot 2023-11-16 234805" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/d8b430a2-cd75-4e9b-9901-f1378db05dd5">
+
+
+### Use cases: How the services provide by NF are discovered by other network function
+
+<img width="700" alt="Screenshot 2023-11-16 234932" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/ea7db98e-d2a1-47e7-ae1c-4656cca99811">
+
+- *PLMN* - Public Lan mobile network
+
+<img width="700" alt="Screenshot 2023-11-16 235252" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b97ab2a4-e30e-4ef2-99ba-a16d55f7e283">
+
+
+<img width="700" alt="Screenshot 2023-11-16 235940" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/68ed42ec-d476-489d-9391-46ceb00e6310">
+
+
+- Services that are offered by these network functions are listedn in NFprofile
+<img width="700" alt="Screenshot 2023-11-17 000402" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/1d7cdd82-fc58-4d61-b7c0-7afa72086898">
+
+## 5G Roaming architecture
+- *VPLMN*- Visiting public lan mobile network
+- *HPLMN* - Home public lan mobile network
+- For authentication-AMF,AUSF,UDM
+- AMF will fall in visting mobile network whereaas AUSF and UDM will fall in Home mobile network
+
+<img width="700" alt="Screenshot 2023-11-17 004404" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/40481be9-cf62-4d66-b6e1-dc85046510ee">
+
+### Logical entities for network access security
+
+<img width="700" alt="Screenshot 2023-11-17 004438" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/65fa0cdc-d04a-45d7-80c1-de778cb8dfde">
+
+
+<img width="700" alt="Screenshot 2023-11-17 004916" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/b1858847-9e06-4625-92b2-acaaca7b6151">
+
+
+- Permanent identity of UE is SUPI
+- It is encrypted as SUCI
+
+<img width="700" alt="Screenshot 2023-11-17 005141" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/01e3d2f0-d90f-49a5-80e3-9e484392c362">
+
+<img width="700" alt="Screenshot 2023-11-17 010357" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/45388733-5bd4-4b92-9c53-07f2044302d3">
+
+
+<img width="700" alt="Screenshot 2023-11-17 010521" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/ef97e911-3d91-4491-ba3c-e9f7f67ad81a">
+
+### Network access security
+
+<img width="700" alt="Screenshot 2023-11-17 010916" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/dcf5b42b-7c8f-429e-a303-6a1376ef8374">
+
+<img width="700" alt="Screenshot 2023-11-17 011242" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/c0640c79-ab19-4fa7-8663-ae45b3d39437">
+
+<img width="700" alt="Screenshot 2023-11-17 011435" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/f9577b79-24bd-49b2-8061-a7151a65fb59">
+
+<img width="700" alt="Screenshot 2023-11-17 011906" src="https://github.com/raunakkk21/Everything-about-5G/assets/143111163/84fa4fa0-1b3f-4819-8a46-b321c057ba14">
+
+- N1 message because it is sent over logical interface of n1
+- In N1 if UE is previously registered with network then it will send 5G-GUTI otherwise if it is new then it will send SUCI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
